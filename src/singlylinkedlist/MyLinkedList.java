@@ -45,19 +45,43 @@ public class MyLinkedList {
 
     // a method to delete node from the list
     // this method will delete the last inserted node
+    //this method will return data of deleted node
     public int delete() {
         int response = 0;
-        // to delete the last node, we have to reach the second last node, and set its next node reference to null
-        // assigning head to temp
-        Node temp = head;
-        // to store reference of previous node, we will use this node to delete last node by setting its next node as null
-        Node previous = null;
-        while (temp.getNext() != null) {
-            previous = temp;
-            temp = temp.getNext();
+        // checking if list contain any node
+        if (head != null) {
+            // to delete the last node, we have to reach the second last node, and set its next node reference to null
+            // assigning head to temp
+            Node temp = head;
+            // to store reference of previous node, we will use this node to delete last node by setting its next node as null
+            Node previous = null;
+            while (temp.getNext() != null) {
+                previous = temp;
+                temp = temp.getNext();
+            }
+            // getting data from last node
+            response = temp.getData();
+            // now previous is pointing to second last node
+            previous.setNext(null);
         }
-        // now previous is pointing to second last node
-        previous.setNext(null);
         return response;
     }
+
+    // a method to search data in the list, this method will return true if Node having givne data found else false
+    public boolean search(int data) {
+        boolean response = false;
+        //traversing the linked list and will check each node for given data
+        // assigning head to temp
+        Node temp = head;
+        while (temp != null) {
+            // checking for data at each node
+            if (temp.getData() == data) {
+                response = true;
+                break;
+            }
+
+        }
+        return response;
+    }
+
 }
