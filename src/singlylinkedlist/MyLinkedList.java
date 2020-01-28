@@ -11,4 +11,11 @@ public class MyLinkedList {
     // to store reference of firstnode
     Node head;
 
+    // constructor to initialize linked list
+    public MyLinkedList() {
+        // when the linked list is created head will refer to null
+        head = null;
+    }
+
+
 }
