@@ -57,6 +57,7 @@ public class MyLinkedList {
             Node previous = null;
             while (temp.getNext() != null) {
                 previous = temp;
+                // updating temp
                 temp = temp.getNext();
             }
             // getting data from last node
@@ -79,9 +80,30 @@ public class MyLinkedList {
                 response = true;
                 break;
             }
+            // updating temp
+            temp = temp.getNext();
 
         }
         return response;
+    }
+
+    // a method to print the list
+    public void printList() {
+        //traversing the linked list and will print each node.
+        // assigning head to temp
+        System.out.println("Printing list");
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.getData());
+            // updating temp
+            temp = temp.getNext();
+            if (temp != null) {
+                System.out.print("---->");
+            }
+
+
+        }
+        System.out.println();
     }
 
 }
