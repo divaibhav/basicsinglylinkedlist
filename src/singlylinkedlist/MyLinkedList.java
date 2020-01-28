@@ -17,5 +17,9 @@ public class MyLinkedList {
         head = null;
     }
 
+    // to get start of list
+    public Node getHead() {
+        return head;
+    }
 
 }
