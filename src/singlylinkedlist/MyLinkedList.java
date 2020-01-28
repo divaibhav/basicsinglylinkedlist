@@ -42,4 +42,22 @@ public class MyLinkedList {
             temp.setNext(node);
         }
     }
+
+    // a method to delete node from the list
+    // this method will delete the last inserted node
+    public int delete() {
+        int response = 0;
+        // to delete the last node, we have to reach the second last node, and set its next node reference to null
+        // assigning head to temp
+        Node temp = head;
+        // to store reference of previous node, we will use this node to delete last node by setting its next node as null
+        Node previous = null;
+        while (temp.getNext() != null) {
+            previous = temp;
+            temp = temp.getNext();
+        }
+        // now previous is pointing to second last node
+        previous.setNext(null);
+        return response;
+    }
 }
