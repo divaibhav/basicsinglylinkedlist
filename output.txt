@@ -1,0 +1,12 @@
+enter 5 integers
+98
+12
+34
+56
+78
+Printing list
+98---->12---->34---->56---->78
+deleting last node
+78
+Printing list
+98---->12---->34---->56
