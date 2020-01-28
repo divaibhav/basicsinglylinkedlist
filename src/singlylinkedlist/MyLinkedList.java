@@ -7,4 +7,8 @@
 package singlylinkedlist;
 
 public class MyLinkedList {
+    // declaring head
+    // to store reference of firstnode
+    Node head;
+
 }
