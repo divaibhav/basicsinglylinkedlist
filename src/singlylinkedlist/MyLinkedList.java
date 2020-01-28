@@ -67,7 +67,7 @@ public class MyLinkedList {
         return response;
     }
 
-    // a method to search data in the list, this method will return true if Node having givne data found else false
+    // a method to search data in the list, this method will return true if Node having given data found else false
     public boolean search(int data) {
         boolean response = false;
         //traversing the linked list and will check each node for given data
