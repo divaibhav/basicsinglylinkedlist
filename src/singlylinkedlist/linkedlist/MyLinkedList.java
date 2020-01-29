@@ -45,6 +45,17 @@ public class MyLinkedList {
         }
     }
 
+    //a method to insert node in the beginning of linked list
+    // i.e. insert at head or addFirst
+    public void insertAtBeginning(int data) {
+        //creating node
+        Node node = new Node(data);
+        //setting the next reference of node to refer to head or start of list
+        node.setNext(head);
+        // setting the head to refer node
+        head = node;
+    }
+
     // a method to delete node from the list
     // this method will delete the last inserted node
     //this method will return data of deleted node
