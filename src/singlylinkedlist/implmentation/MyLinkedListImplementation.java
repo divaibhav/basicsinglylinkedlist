@@ -14,6 +14,7 @@ public class MyLinkedListImplementation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         MyLinkedList linkedList = new MyLinkedList();
+
         // a loop to add data in the lst
         System.out.println("enter 5 integers");
         for (int i = 0; i < 5; i++) {
@@ -24,9 +25,11 @@ public class MyLinkedListImplementation {
         }
         // calling printList method to print list
         linkedList.printList();
+        //deleting the last node
         System.out.println("deleting last node");
         int deletedNode = linkedList.delete();
         System.out.println(deletedNode);
+        //printing the list
         linkedList.printList();
 
     }
