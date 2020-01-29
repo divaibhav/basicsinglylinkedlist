@@ -81,6 +81,19 @@ public class MyLinkedList {
         return response;
     }
 
+    //a method to delete node from the beginning of linked list
+    // i.e. remove from head or remove first
+    public int deleteFromBeginning() {
+        int response = 0;
+        if (head != null) {
+            //getting data from first node
+            response = head.getData();
+            // updating head to refer to next node
+            head = head.getNext();
+        }
+        return response;
+    }
+
     // a method to search data in the list, this method will return true if Node having given data found else false
     public boolean search(int data) {
         boolean response = false;
