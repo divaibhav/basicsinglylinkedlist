@@ -4,7 +4,9 @@
  *  Date: 29-Jan-20
  *  Time: 3:33 AM
  */
-package singlylinkedlist;
+package singlylinkedlist.linkedlist;
+
+import singlylinkedlist.node.Node;
 
 public class MyLinkedList {
     // declaring head

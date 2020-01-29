@@ -4,7 +4,9 @@
  *  Date: 29-Jan-20
  *  Time: 4:12 AM
  */
-package singlylinkedlist;
+package singlylinkedlist.implmentation;
+
+import singlylinkedlist.linkedlist.MyLinkedList;
 
 import java.util.Scanner;
 

@@ -4,7 +4,7 @@
  *  Date: 29-Jan-20
  *  Time: 3:27 AM
  */
-package singlylinkedlist;
+package singlylinkedlist.node;
 
 public class Node {
     // to store integer value
