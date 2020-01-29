@@ -76,7 +76,12 @@ public class MyLinkedList {
             // getting data from last node
             response = temp.getData();
             // now previous is pointing to second last node
-            previous.setNext(null);
+            // if there only one node in the list, then  update head
+            if (previous != null) {
+                previous.setNext(null);
+            } else {
+                head = null;
+            }
         }
         return response;
     }
